@@ -35,9 +35,9 @@ def predict():
     predict=model.predict(data)
     result=""
     if predict==1:
-        result="Yes, their are more chances of getting cardiovascular disease in feature"
+        result="Yes, their are more chances of getting cardiovascular disease in future. You should try to maintain your blood pressure and weight in normal range by following strict diet and excercise. Also keep control on smoking and alcohol intake."
     else :
-        result="You are healthy"
+        result="You are healthy."
     return render_template('index.html',result=result)
 
 if __name__=="__main__":
