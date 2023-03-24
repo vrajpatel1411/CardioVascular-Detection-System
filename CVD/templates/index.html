@@ -20,7 +20,7 @@
                 <label for="age">Age</label>
               </div>
               <div class="col-75">
-                <input type="number" name="age" id="age" placeholder="Enter Your Age"></input>
+                <input type="number" name="age" id="age" placeholder="Enter Your Age" min="45" max="80" required></input>
               </div>
               </div>
               <div class="row">
@@ -28,7 +28,7 @@
                 <label for="gender">Gender</label>
               </div>
               <div class="col-75">
-                <select name="gender" id="gender">
+                <select name="gender" id="gender" required>
                   <option value=1>Women</option>
                   <option value=2>Men</option>
                 </select>
@@ -39,7 +39,7 @@
                 <label for="height">Height</label>
               </div>
               <div class="col-75">
-              <input type="number" name="height" id="height" placeholder="Enter Your height (in cm)"></input>
+              <input type="number" name="height" id="height" placeholder="Enter Your height (in cm)" min="80" max="200" required></input>
               </div>
               </div>
               <div class="row">
@@ -47,7 +47,7 @@
                 <label for="weight">Weight</label>
               </div>
               <div class="col-75">
-              <input type="number" id="weight" name="weight" placeholder="Enter your Weight (in kg)"></input>
+              <input type="number" id="weight" name="weight" placeholder="Enter your Weight (in kg)" min="40" required></input>
               </div>
               </div>
               <div class="row">
@@ -55,7 +55,7 @@
                 <label for="ap_hi">Systolic Blood Pressure :</label>
               </div>
               <div class="col-75">
-              <input type="number" id="ap_hi" name="ap_hi" placeholder="Enter Your Systolic Blood Pressure"></input>
+              <input type="number" id="ap_hi" name="ap_hi" placeholder="Enter Your Systolic Blood Pressure" min="80" max="180"required></input>
               </div>
               </div>
               <div class="row">
@@ -63,7 +63,7 @@
                 <label for="ap_li">Diastolic blood pressure</label>
               </div>
               <div class="col-75">
-              <input type="number" id="ap_li" name="ap_li" placeholder="Enter Your Diastolic Blood Pressure"></input>
+              <input type="number" id="ap_li" name="ap_li" placeholder="Enter Your Diastolic Blood Pressure" min="60" max="120" required></input>
               </div>
               </div>
               <div class="row">
@@ -71,7 +71,7 @@
                 <label for="cholestrol">Choose Cholestrol Level</label>
               </div>
               <div class="col-75">  
-                <select name="cholestrol" id="cholestrol">
+                <select name="cholestrol" id="cholestrol" required>
                 <option value=1>Normal</option>
                 <option value=2>Above Normal</option>
                   <option value=3>High</option>
@@ -83,7 +83,7 @@
                 <label for="gluc">Choose Glucose Level</label>
               </div>
               <div class="col-75">
-                <select name="gluc" id="gluc">
+                <select name="gluc" id="gluc" required>
                 <option value=1>Normal</option>
                 <option value=2>Above Normal</option>
                   <option value=3>High</option>
@@ -95,7 +95,7 @@
                 <label for="sh">Smoking Habit</label>
               </div>
               <div class="col-75">
-              <select name="sh" id="sh">
+              <select name="sh" id="sh" required>
                 <option value=0>No</option>
                 <option value=1>Yes</option>
               </select>
@@ -106,7 +106,7 @@
                 <label for="alcohol">Alcohol Intake</label>
               </div>
               <div class="col-75">
-                <select name="alcohol" id="alcohol">
+                <select name="alcohol" id="alcohol" required>
                 <option value=0>No</option>
                 <option value=1>Yes</option>
               </select>
@@ -117,7 +117,7 @@
                 <label for="active">Physical Activity</label>
               </div>
               <div class="col-75">
-                <select name="active" id="active">
+                <select name="active" id="active" required>
                 <option value=0>No</option>
                 <option value=1>Yes</option>
               </select>
