@@ -148,7 +148,6 @@ The prediction model used in this application is an XGBoost classifier trained o
 
 
 
-Ensure all files are correctly placed in their respective directories for the application to function properly.
 
 ### Conclusion
 The project successfully demonstrates the use of machine learning algorithms for early detection of cardiovascular disease. The XGBoost model provided the highest accuracy (73.6%), indicating its potential for real-world applications in healthcare.## GLIMPSES OF OUR PROJECT
