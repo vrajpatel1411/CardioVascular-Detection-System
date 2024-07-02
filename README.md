@@ -1,5 +1,5 @@
 
-# Implementation of Machine Learning Algorithms to Detect Cardiovascular Disease
+# CardioVascular Detection System
 
 ## Motivation
 
