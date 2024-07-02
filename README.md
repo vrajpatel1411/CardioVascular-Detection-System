@@ -82,14 +82,79 @@ Additionally, we implemented various ensemble strategies:
 ### Step 3: Model Selection
 Based on the evaluation, XGBoost with Logistic Regression yielded the best results. We trained our final model using this configuration and saved it as a pickle file for deployment.
 
-### Step 4: Deployment
-We created a Flask application that accepts input data from a form, processes it through the trained model, and predicts the presence of cardiovascular disease. This application was deployed on an EC2 instance using Amazon Web Services (AWS). Files were uploaded via WinSCP, and the Flask app was run on the EC2 instance using PuTTY.
+## Flask Application for Cardiovascular Disease Prediction
 
-## Conclusion
-The project successfully demonstrates the use of machine learning algorithms for early detection of cardiovascular disease. The XGBoost model provided the highest accuracy, indicating its potential for real-world applications in healthcare.
+This project includes a Flask web application designed to predict the likelihood of cardiovascular disease based on user input. The application utilizes the pre-trained XGBoost model to perform the predictions.
 
-## GLIMPSES OF OUR PROJECT
+### Features
 
+- User-friendly interface for inputting health parameters
+- Real-time prediction of cardiovascular disease risk
+- Personalized health recommendations based on prediction results
+
+### Setup
+
+#### Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/vrajpatel1411/CardioVascular-Detection-System.git
+    cd CardioVascular-Detection-System/cvd
+    ```
+
+2. **Create and activate a virtual environment:**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required packages:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Ensure the pre-trained model file (`model.pkl`) is in the project directory.**
+
+#### Running the App
+
+1. **Start the Flask application:**
+
+    ```bash
+    python app.py
+    ```
+
+2. **Open your web browser and navigate to:**
+
+    ```
+    http://localhost:8080
+    ```
+
+### Usage
+
+1. **Home Page:**
+   - Enter your health parameters, including age, gender, height, weight, blood pressure readings, cholesterol level, glucose level, smoking habits, alcohol intake, and physical activity.
+
+2. **Prediction:**
+   - Submit the form to receive a prediction about your cardiovascular disease risk.
+
+
+
+### Model
+
+The prediction model used in this application is an XGBoost classifier trained on a cardiovascular disease dataset from Kaggle. The model was selected based on its superior accuracy in predicting cardiovascular disease risk.
+
+
+
+Ensure all files are correctly placed in their respective directories for the application to function properly.
+
+### Conclusion
+The project successfully demonstrates the use of machine learning algorithms for early detection of cardiovascular disease. The XGBoost model provided the highest accuracy (73.6%), indicating its potential for real-world applications in healthcare.## GLIMPSES OF OUR PROJECT
+
+
+### Glimpses of the Project
 
 ![image](https://github.com/vrajpatel1411/Research-Methodology_project/assets/56471759/3506caf4-73a0-40ae-9617-47fcd013f179)
 
